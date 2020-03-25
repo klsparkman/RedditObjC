@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		359349B2242BBA61002AAAC5 /* ROCPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 359349B1242BBA61002AAAC5 /* ROCPost.m */; };
 		35F7676D242B1B2500F0072D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F7676C242B1B2500F0072D /* AppDelegate.m */; };
 		35F76770242B1B2500F0072D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F7676F242B1B2500F0072D /* SceneDelegate.m */; };
 		35F76773242B1B2500F0072D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F76772242B1B2500F0072D /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		359349B0242BBA61002AAAC5 /* ROCPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROCPost.h; sourceTree = "<group>"; };
+		359349B1242BBA61002AAAC5 /* ROCPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROCPost.m; sourceTree = "<group>"; };
 		35F76768242B1B2500F0072D /* RedditObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F7676B242B1B2500F0072D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35F7676C242B1B2500F0072D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +45,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		359349AC242BB9FF002AAAC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35F7676B242B1B2500F0072D /* AppDelegate.h */,
+				35F7676C242B1B2500F0072D /* AppDelegate.m */,
+				35F7676E242B1B2500F0072D /* SceneDelegate.h */,
+				35F7676F242B1B2500F0072D /* SceneDelegate.m */,
+				35F76777242B1B2700F0072D /* Assets.xcassets */,
+				35F76779242B1B2700F0072D /* LaunchScreen.storyboard */,
+				35F7677C242B1B2700F0072D /* Info.plist */,
+				35F7677D242B1B2700F0072D /* main.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		359349AD242BBA13002AAAC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				359349B0242BBA61002AAAC5 /* ROCPost.h */,
+				359349B1242BBA61002AAAC5 /* ROCPost.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		359349AE242BBA18002AAAC5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		359349AF242BBA1D002AAAC5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		35F7675F242B1B2500F0072D = {
 			isa = PBXGroup;
 			children = (
@@ -61,17 +102,13 @@
 		35F7676A242B1B2500F0072D /* RedditObjC */ = {
 			isa = PBXGroup;
 			children = (
-				35F7676B242B1B2500F0072D /* AppDelegate.h */,
-				35F7676C242B1B2500F0072D /* AppDelegate.m */,
-				35F7676E242B1B2500F0072D /* SceneDelegate.h */,
-				35F7676F242B1B2500F0072D /* SceneDelegate.m */,
+				359349AF242BBA1D002AAAC5 /* Controllers */,
+				359349AE242BBA18002AAAC5 /* Views */,
+				359349AD242BBA13002AAAC5 /* Model */,
+				359349AC242BB9FF002AAAC5 /* Resources */,
 				35F76771242B1B2500F0072D /* ViewController.h */,
 				35F76772242B1B2500F0072D /* ViewController.m */,
 				35F76774242B1B2500F0072D /* Main.storyboard */,
-				35F76777242B1B2700F0072D /* Assets.xcassets */,
-				35F76779242B1B2700F0072D /* LaunchScreen.storyboard */,
-				35F7677C242B1B2700F0072D /* Info.plist */,
-				35F7677D242B1B2700F0072D /* main.m */,
 			);
 			path = RedditObjC;
 			sourceTree = "<group>";
@@ -102,6 +139,7 @@
 		35F76760242B1B2500F0072D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ROC;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Kelsey Sparkman";
 				TargetAttributes = {
@@ -147,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35F76773242B1B2500F0072D /* ViewController.m in Sources */,
+				359349B2242BBA61002AAAC5 /* ROCPost.m in Sources */,
 				35F7676D242B1B2500F0072D /* AppDelegate.m in Sources */,
 				35F7677E242B1B2700F0072D /* main.m in Sources */,
 				35F76770242B1B2500F0072D /* SceneDelegate.m in Sources */,
@@ -290,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RedditObjC/Info.plist;
+				INFOPLIST_FILE = RedditObjC/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RedditObjC/Info.plist;
+				INFOPLIST_FILE = RedditObjC/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
