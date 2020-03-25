@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		359349B2242BBA61002AAAC5 /* ROCPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 359349B1242BBA61002AAAC5 /* ROCPost.m */; };
+		359349B5242BC32D002AAAC5 /* ROCPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359349B4242BC32D002AAAC5 /* ROCPostController.m */; };
 		35F7676D242B1B2500F0072D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F7676C242B1B2500F0072D /* AppDelegate.m */; };
 		35F76770242B1B2500F0072D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F7676F242B1B2500F0072D /* SceneDelegate.m */; };
 		35F76773242B1B2500F0072D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F76772242B1B2500F0072D /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* Begin PBXFileReference section */
 		359349B0242BBA61002AAAC5 /* ROCPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROCPost.h; sourceTree = "<group>"; };
 		359349B1242BBA61002AAAC5 /* ROCPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROCPost.m; sourceTree = "<group>"; };
+		359349B3242BC32D002AAAC5 /* ROCPostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROCPostController.h; sourceTree = "<group>"; };
+		359349B4242BC32D002AAAC5 /* ROCPostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROCPostController.m; sourceTree = "<group>"; };
 		35F76768242B1B2500F0072D /* RedditObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F7676B242B1B2500F0072D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35F7676C242B1B2500F0072D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,8 +82,18 @@
 		359349AF242BBA1D002AAAC5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				359349B6242BC334002AAAC5 /* ModelController */,
+				359349B3242BC32D002AAAC5 /* ROCPostController.h */,
+				359349B4242BC32D002AAAC5 /* ROCPostController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		359349B6242BC334002AAAC5 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 		35F7675F242B1B2500F0072D = {
@@ -184,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359349B5242BC32D002AAAC5 /* ROCPostController.m in Sources */,
 				35F76773242B1B2500F0072D /* ViewController.m in Sources */,
 				359349B2242BBA61002AAAC5 /* ROCPost.m in Sources */,
 				35F7676D242B1B2500F0072D /* AppDelegate.m in Sources */,
