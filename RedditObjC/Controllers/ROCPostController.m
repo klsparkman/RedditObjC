@@ -47,8 +47,29 @@ static NSString * const baseRedditURLString = @"https://www.reddit.com/r/funny.j
         completion(arrayOfPosts);
         
     }] resume];
-    
-    
 }
 
++(void)fetchImageForPost:(ROCPost *)post completion:(void(^)(UIImage * _Nullable))completion
+{
+    NSURL *imageURL = [NSURL URLWithString:post.thumbnail];
+    
+    [[[NSURLSession sharedSession] dataTaskWithURL:imageURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        if (error)
+        {
+            NSLog(@"%@", error);
+            completion(nil);
+            return;
+        }
+        if (!data)
+        {
+            NSLog(@"%@", error);
+            completion(nil);
+            return;
+        }
+        UIImage *image = [UIImage imageWithData:data];
+        completion(image);
+        
+    }] resume];
+}
 @end
